@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* Temporary min-height for fixed header testing */
+  min-height: 150vh;
+  background-color: #ddd;
+  color: #2e3745;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 10px 15px;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li:not(:first-child) {
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2e3745;
+  border-bottom: 1px solid transparent;
+}
+
+nav a:hover {
+  border-bottom-color: #2e3745;
+  transition: border-color 0.5s;
+}
