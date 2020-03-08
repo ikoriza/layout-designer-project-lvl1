@@ -1,41 +1,66 @@
+:root {
+  --main-color: #2e3745;
+}
+
 body {
   margin: 0;
   padding: 0;
   padding-top: 50px;
-  /* Temporary min-height for fixed header testing */
-  min-height: 150vh;
-  color: #2e3745;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 12px;
+  color: var(--main-color);
+  font: 13px / 150% "Arimo", sans-serif;
 }
 
-.btn {
-  padding: 10px;
-  border: 1px solid #fff;
-  border-radius: 10px;
-  font-size: 1.2em;
-  color: white;
-  text-decoration: none;
+section {
+	padding: 45px 0;
+}
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.section-about .wrapper,
+.section-places .wrapper {
+  width: 870px;
 }
 
 .flex-container {
-  display: flex;
-  align-items: center;
+	display: flex;
+}
+
+.align-items-center {
+  align-items: center;;
+}
+
+.justify-content {
+  justify-content: space-between;
 }
 
 .mr-10 {
   margin-right: 10px;
 }
 
-/* HEADER */
+.btn {
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  color: white;
+	text-decoration: none;
+}
 
+h2 {
+	font-size: 1.7em;
+}
+
+/* HEADER */
 header {
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   padding: 10px 15px;
-  background-color: #fff;
+	background-color: #fff;
+	font-size: 12px;
   font-weight: 600;
 }
 
@@ -46,7 +71,7 @@ nav {
 nav ul {
   margin: 0;
   padding: 0;
-  list-style: none;
+	list-style: none;
 }
 
 nav li:not(:first-child) {
@@ -55,23 +80,23 @@ nav li:not(:first-child) {
 
 nav a {
   text-decoration: none;
-  color: #2e3745;
+  color: var(--main-color);
   border-bottom: 1px solid transparent;
 }
 
 nav a:hover {
-  border-bottom-color: #2e3745;
+  border-bottom-color: var(--main-color);
   transition: border-color 0.5s;
 }
 
 /* SECTION PROMO */
-
 .section-promo {
   flex-direction: column;
-  justify-content: center;
-  height: 325px;
-  background: #2e3745 url(../images/banner.png) no-repeat center 75% / cover;
-  color: #fff;
+	justify-content: center;
+	padding: 30px 0;
+	background: var(--main-color) url(../images/banner.png) no-repeat center 70% / 130%;
+	color: #fff;
+	font-weight: bold;
 }
 
 .section-promo h1,
@@ -79,11 +104,43 @@ nav a:hover {
   margin: 0;
 }
 
+.section-promo img {
+	margin-bottom: 10px;
+}
+
 .section-promo h1 {
-  font-size: 3em;
+	font-size: 38px;
+	line-height: 1.2;
 }
 
 .section-promo p {
-  font-size: 1.2em;
+  font-size: 15px;
   margin-bottom: 15px;
+}
+
+/* SECTION FEATURES */
+.section-features ul {
+  justify-content: space-between;
+  align-items: flex-start;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.section-features li {
+	width: 30%;
+}
+
+/* SECTION ABOUT & PLACES*/
+.section-about {
+  background-color: #f7f7f7;
+}
+
+.section-about .wrapper {
+  flex-direction: row-reverse;
+}
+
+.section-text {
+  flex-basis: 425px;
 }
