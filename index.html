@@ -12,13 +12,13 @@
 </head>
 
 <body>
-    <header>
-        <nav class="flex-container">
-            <div class="flex-container align-items-center">
-                <img class="mr-10" src="images/logo.svg" width="28" height="28" alt="Логотип ЖК «Лунное море»">
+    <header class="main-header">
+        <nav class="main-nav flex-container">
+            <p class="logo flex-container">
+                <img class="header-logo" src="images/logo.svg" width="28" height="28" alt="Логотип ЖК «Лунное море»">
                 <span>Лунное море</span>
-            </div>
-            <ul class="flex-container align-items-center">
+            </p>
+            <ul class="flex-container">
                 <li><a href="#features">Преимущества</a></li>
                 <li><a href="#about">О ЖК</a></li>
                 <li><a href="#places">Места для отдыха</a></li>
@@ -26,7 +26,7 @@
         </nav>
     </header>
     <main>
-        <section class="section-promo flex-container align-items-center">
+        <section class="section-promo flex-container">
             <img src="images/logo.svg" width="140" height="140" alt="Логотип ЖК «Лунное море»">
             <h1>ЖК «Лунное море»</h1>
             <p>Место, откуда не хочется улетать</p>
@@ -56,8 +56,8 @@
                 </ul>
             </div>
         </section>
-        <section id="about" class="section-about clearfix">
-            <div class="wrapper flex-container justify-content">
+        <section id="about" class="section-about">
+            <div class="wrapper flex-container">
                 <img src="images/moon-1.jpg" width="315" height="210" alt="Вид из космоса на ЖК «Лунное море»">
                 <div class="section-text">
                     <h2>О ЖК «Лунное море»</h2>
@@ -70,8 +70,8 @@
                 </div>
             </div>
         </section>
-        <section id="places" class="section-places clearfix">
-            <div class="wrapper flex-container justify-content">
+        <section id="places" class="section-places">
+            <div class="wrapper flex-container">
                 <img src="images/moon-2.jpg" width="315" height="200" alt="Вид из космоса на ЖК «Лунное море»">
                 <div class="section-text">
                     <h2>Места для отдыха</h2>
@@ -93,30 +93,26 @@
                         <legend>Параметры квартиры</legend>
                         <label class="flex-container">
                             <span>Количество комнат:</span>
-                            <div class="select-container">
-                                <select name="rooms">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                </select>
-                            </div>
+                            <select name="rooms">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
                         </label>
                         <label class="flex-container">
                             <span>Отделка:</span>
-                            <div class="select-container">
-                                <select name="decoration">
-                                    <option value="no-decoration">Без отделки</option>
-                                    <option value="wallpaper">Обои</option>
-                                    <option value="paint">Краска</option>
-                                </select>
-                            </div>
+                            <select name="decoration">
+                                <option value="no-decoration">Без отделки</option>
+                                <option value="wallpaper">Чуть-чуть отделки</option>
+                                <option value="paint">Огрооооооомное количествео отделки</option>
+                            </select>
                         </label>
                     </fieldset>
                     <fieldset>
                         <legend>Контактная информация</legend>
                         <label class="flex-container">
                             <span>Имя:</span>
-                            <input type="text">
+                            <input type="text" value="Союз Аполлонов">
                         </label>
                         <label class="flex-container">
                             <span>Телефон:</span>
