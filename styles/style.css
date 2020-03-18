@@ -39,7 +39,7 @@ p {
 }
 
 h3 {
-  font-size: 115%;
+  font-size: 135%;
 }
 
 .wrapper {
@@ -262,7 +262,6 @@ footer .flex-container {
 }
 
 footer h3 {
-  font-size: 135%;
   margin-top: 0;
   margin-bottom: 10px;
 }
