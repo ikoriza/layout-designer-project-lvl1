@@ -5,6 +5,7 @@
   --color-grey: #d8d8d8;
   --color-light-grey: #f7f7f7;
   --font-family: "Arimo", sans-serif;
+  --fixed-height: 50px;
 }
 
 /* COMMON */
@@ -14,7 +15,7 @@
 
 body {
   min-width: 1040px;
-  font: 80% / 1.5 var(--font-family);
+  font: 100% / 1.5 var(--font-family);
   color: var(--color-main);
 }
 
@@ -49,8 +50,16 @@ section {
   margin-right: 10px;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .mb-25 {
   margin-bottom: 25px;
+}
+
+.pb-65 {
+  padding-bottom: 65px;
 }
 
 .width-30 {
@@ -69,9 +78,8 @@ section {
   font-weight: bold;
 }
 
-.font-smoothing {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.colored {
+  background-color: var(--color-light-grey);
 }
 
 /* FLEX */
@@ -125,23 +133,27 @@ section {
 
 /* FONT-SIZES */
 h1 {
-  font-size: 300%;
+  font-size: 280%;
 }
 
 h2 {
-  font-size: 200%;
+  font-size: 180%;
 }
 
 h3 {
   font-size: 115%;
 }
 
+.fsize-m {
+  font-size: 110%;
+}
+
 .fsize-s {
-  font-size: 90%;
+  font-size: 85%;
 }
 
 .fsize-xs {
-  font-size: 85%;
+  font-size: 80%;
 }
 
 /* BUTTONS */
@@ -150,7 +162,7 @@ h3 {
   padding: 10px;
   border: 1px solid var(--color-secondary);
   border-radius: 8px;
-  font: bold 110% / 1 var(--font-family);
+  font: bold 100% / 1 var(--font-family);
   color: var(--color-secondary);
   background: transparent;
   text-decoration: none;
@@ -170,12 +182,12 @@ h3 {
 
 /* HEADER */
 .header {
-  padding-top: 50px;
+  padding-top: var(--fixed-height);
 }
 
 .nav {
   position: fixed;
-  min-height: 50px;
+  min-height: var(--fixed-height);
   left: 0;
   top: 0;
   right: 0;
@@ -192,21 +204,7 @@ h3 {
   line-height: 1.2;
 }
 
-.promo-subheading {
-  margin-bottom: 20px;
-  font-size: 120%;
-}
-
 /* SECTION APPLY */
-.section-apply,
-.section-about {
-  background-color: var(--color-light-grey);
-}
-
-.section-apply {
-  padding-bottom: 65px;
-}
-
 .apply-form {
   margin: 0 auto;
   width: 370px;
@@ -219,7 +217,7 @@ h3 {
 }
 
 .apply-form-legend {
-  font-size: 140%;
+  font-size: 120%;
   color: var(--color-secondary);
 }
 
@@ -231,7 +229,7 @@ h3 {
   border: 1px solid var(--color-grey);
   border-radius: 9px;
   outline: none;
-  font: 85% / 1 var(--font-family);
+  font: 80% / 1 var(--font-family);
 }
 
 .input:focus,
