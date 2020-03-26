@@ -78,7 +78,7 @@ section {
   font-weight: bold;
 }
 
-.colored {
+.bg-light-grey {
   background-color: var(--color-light-grey);
 }
 
