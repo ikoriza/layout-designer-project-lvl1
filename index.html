@@ -30,10 +30,12 @@
         </header>
         <main>
             <section class="section-promo text-align-center font-weight-bold">
-                <img class="mb-10" src="images/logo.svg" width="137" height="137" alt="Логотип ЖК «Лунное море»">
-                <h1>ЖК «Лунное море»</h1>
-                <p class="mb-20 fsize-m">Место, откуда не хочется улетать</p>
-                <a href="#apply" class="link-reset btn btn-inverse">Забронировать</a>
+                <div class="wrapper">
+                    <img class="mb-10" src="images/logo.svg" width="137" height="137" alt="Логотип ЖК «Лунное море»">
+                    <h1>ЖК «Лунное море»</h1>
+                    <p class="mb-20 fsize-m">Место, откуда не хочется улетать</p>
+                    <a href="#apply" class="link-reset btn btn-inverse">Забронировать</a>
+                </div>
             </section>
             <section id="features">
                 <div class="wrapper">
@@ -89,44 +91,46 @@
                 </div>  
             </section>
             <section id="apply" class="pb-65 bg-light-grey">
-                <h2 class="mb-25 text-align-center">Оставьте заявку сегодня!</h2>
-                <form class="apply-form">
-                    <fieldset class="apply-form-fieldset">
-                        <legend class="apply-form-legend font-weight-bold">Параметры квартиры</legend>
-                        <label class="flex-container apply-form-label align-center mb-10">
-                            <span class="flex-basis-50 font-weight-bold fsize-s">Количество комнат:</span>
-                            <select class="select" name="rooms">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
-                        </label>
-                        <label class="flex-container apply-form-label align-center mb-10">
-                            <span class="flex-basis-50 font-weight-bold fsize-s">Отделка:</span>
-                            <select class="select" name="decoration">
-                                <option value="no-decoration">Без отделки</option>
-                                <option value="wallpaper">Чуть-чуть отделки</option>
-                                <option value="paint">Огрооооооомное количество отделки</option>
-                            </select>
-                        </label>
-                    </fieldset>
-                    <fieldset class="apply-form-fieldset">
-                        <legend class="apply-form-legend font-weight-bold">Контактная информация</legend>
-                        <label class="flex-container apply-form-label align-center mb-10">
-                            <span class="flex-basis-50 font-weight-bold fsize-s">Имя:</span>
-                            <input class="flex-basis-50 input" type="text" value="Союз Аполлонов">
-                        </label>
-                        <label class="flex-container apply-form-label align-center mb-10">
-                            <span class="flex-basis-50 font-weight-bold fsize-s">Телефон:</span>
-                            <input class="flex-basis-50 input" type="text">
-                        </label>
-                        <label class="flex-container apply-form-label align-center mb-10">
-                            <span class="flex-basis-50 font-weight-bold fsize-s">E-mail:</span>
-                            <input class="flex-basis-50 input" type="email">
-                        </label>
-                    </fieldset>
-                    <button class="btn btn-wide" type="submit">Отправить</button>
-                </form>
+                <div class="wrapper">
+                    <h2 class="mb-25 text-align-center">Оставьте заявку сегодня!</h2>
+                    <form class="apply-form">
+                        <fieldset class="apply-form-fieldset">
+                            <legend class="apply-form-legend font-weight-bold">Параметры квартиры</legend>
+                            <label class="flex-container apply-form-label align-center mb-10">
+                                <span class="flex-basis-50 font-weight-bold fsize-s">Количество комнат:</span>
+                                <select class="select" name="rooms">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </label>
+                            <label class="flex-container apply-form-label align-center mb-10">
+                                <span class="flex-basis-50 font-weight-bold fsize-s">Отделка:</span>
+                                <select class="select" name="decoration">
+                                    <option value="no-decoration">Без отделки</option>
+                                    <option value="wallpaper">Чуть-чуть отделки</option>
+                                    <option value="paint">Огрооооооомное количество отделки</option>
+                                </select>
+                            </label>
+                        </fieldset>
+                        <fieldset class="apply-form-fieldset">
+                            <legend class="apply-form-legend font-weight-bold">Контактная информация</legend>
+                            <label class="flex-container apply-form-label align-center mb-10">
+                                <span class="flex-basis-50 font-weight-bold fsize-s">Имя:</span>
+                                <input class="flex-basis-50 input" type="text" value="Союз Аполлонов">
+                            </label>
+                            <label class="flex-container apply-form-label align-center mb-10">
+                                <span class="flex-basis-50 font-weight-bold fsize-s">Телефон:</span>
+                                <input class="flex-basis-50 input" type="text">
+                            </label>
+                            <label class="flex-container apply-form-label align-center mb-10">
+                                <span class="flex-basis-50 font-weight-bold fsize-s">E-mail:</span>
+                                <input class="flex-basis-50 input" type="email">
+                            </label>
+                        </fieldset>
+                        <button class="btn btn-wide" type="submit">Отправить</button>
+                    </form>
+                </div>
             </section>
         </main>
         <footer class="footer">
