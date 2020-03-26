@@ -175,11 +175,6 @@ h3 {
   border-color: var(--color-inverse);
 }
 
-.btn-wide {
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
 /* HEADER */
 .nav {
   min-height: var(--fixed-height);
